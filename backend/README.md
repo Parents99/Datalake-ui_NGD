@@ -1,9 +1,29 @@
-# SemanticDataLake Framework
-## Requirements
-```python3.10``` installed, and then execute
-```pip install -r requirements.txt```
+## Requisiti e installazione
 
-## How to run
-Open a terminal window, move to ```DataLake_SemanticFramework``` directory and execute:
-- ```python3.10 api.py``` for API version;
-- ```python3.10 console.py``` for console version.
+È richiesto **Python 3.10**.
+
+Da questa directory, creare e attivare un ambiente virtuale:
+
+```powershell
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Su Linux/macOS è:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Avvio
+
+Avviare il server API dalla root del progetto:
+
+```bash
+python runtime/api.py
+```
+
+Il server sarà raggiungibile su `http://127.0.0.1:5000`.
